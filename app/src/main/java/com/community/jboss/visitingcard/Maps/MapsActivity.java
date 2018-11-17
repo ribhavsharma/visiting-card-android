@@ -4,10 +4,10 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetBehavior;
 import android.support.v4.app.FragmentActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.os.Bundle;
 
 import com.community.jboss.visitingcard.R;
 import com.community.jboss.visitingcard.VisitingCard.ViewVisitingCard;
@@ -57,9 +57,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     // TODO: Replace the stating location with user's current location.
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        mMap = googleMap;
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-    }
+       LatLng delhi = new LatLng(22.7041,77.1025)
+       mMap.addMarker(new MarkerOptions().position(delhi).title("Marker in Delhi")); 
+       mMap.moveCamera(CameraUpdateFactory.newLatLng(delhi));   }
 }
