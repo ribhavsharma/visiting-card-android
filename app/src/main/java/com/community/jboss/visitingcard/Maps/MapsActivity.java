@@ -57,7 +57,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     // TODO: Replace the stating location with user's current location.
     @Override
     public void onMapReady(GoogleMap googleMap) {
-       LatLng delhi = new LatLng(22.7041,77.1025)
+       LatLng delhi = new LatLng(22.7041,77.1025);
        mMap.addMarker(new MarkerOptions().position(delhi).title("Marker in Delhi")); 
        mMap.moveCamera(CameraUpdateFactory.newLatLng(delhi));   }
 }
